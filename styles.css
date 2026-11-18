@@ -313,6 +313,46 @@ textarea { min-height: 145px; resize: vertical; }
   .confidence { padding: 68px 0; }
 }
 
+@media (max-width: 480px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+  .shell { width: min(100% - 20px, 1180px); }
+
+  .nav { min-height: 64px; gap: 10px; }
+  .brand img { width: 78px; height: 48px; }
+  .menu-button { min-height: 44px; padding: 10px 14px; }
+  .nav-links { top: 64px; padding: 14px 14px 18px; gap: 10px; }
+  .nav-links a:not(.button) { padding: 10px 6px; font-size: 1rem; }
+  .nav-links .button { width: 100%; min-height: 46px; }
+
+  .choice-hero { padding: 14px 0 56px; }
+  .landing-logo { width: min(340px, 92vw); height: 190px; margin: -8px auto 0; }
+  .choice-intro { margin-bottom: 20px; }
+  .choice-intro h1 { font-size: clamp(2.25rem, 12vw, 3.2rem); }
+  .eyebrow { font-size: .74rem; letter-spacing: .14em; }
+
+  .top-choice-card { min-height: 0; border-radius: 22px; grid-template-rows: auto auto; }
+  .choice-art { padding: 10px 14px 0; }
+  .choice-art img { width: min(100%, 340px); height: 230px; }
+  .choice-copy { padding: 18px 18px 22px; }
+  .choice-copy h2 { font-size: 1.65rem; }
+
+  .choice-actions, .hero-actions { display: grid; grid-template-columns: 1fr; }
+  .choice-actions .button, .hero-actions .button, .band .button { width: 100%; }
+
+  .page-hero { padding: 54px 0 36px; }
+  .page-hero h1 { font-size: clamp(2.4rem, 12vw, 3.5rem); }
+  .content-section { padding: 18px 0 60px; }
+
+  .panel, .service-card, .point, .contact-card { padding: 20px; }
+  .brand-link-card { min-height: 220px; padding: 28px 20px; gap: 22px; }
+
+  .band { padding: 56px 0; }
+  .site-footer { padding: 36px 0; }
+  .footer-links { gap: 12px 16px; }
+
+  input, select, textarea { font-size: 16px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
